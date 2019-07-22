@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="inside_margin">8dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="size_title">16sp</dimen>
+    <dimen name="size_context">14sp</dimen>
+    <dimen name="size_tab">12sp</dimen>
+</resources>

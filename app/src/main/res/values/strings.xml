@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">NjcsrKotlin</string>
+    <string name="edt_hint_name">工  号</string>
+    <string name="edt_hint_pass">密  码</string>
+    <string name="login">登 录</string>
+
+    <item type="id" name="statusbarutil_fake_status_bar_view"/>
+    <item type="id" name="statusbarutil_translucent_view"/>
+</resources>

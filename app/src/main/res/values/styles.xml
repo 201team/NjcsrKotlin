@@ -1,0 +1,33 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!--非启动界面这样设置就行了-->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowAnimationStyle">@style/Fade</item>
+        <!--解决android过度绘制-->
+        <item name="android:background">@null</item>
+
+        <item name="colorPrimary">@color/color_45CFAD</item>
+        <item name="colorPrimaryDark">@color/color_45CFAD</item>
+        <item name="colorAccent">@color/color_26A69A</item>
+
+    </style>
+
+
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!--这里是启动界面需要背景透明-->
+        <!--<item name="android:windowIsTranslucent">true</item>-->
+        <item name="android:windowDisablePreview">true</item>
+    </style>
+
+    <!--渐入渐出-->
+    <style name="Fade" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/fade_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/fade_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/fade_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/fade_out</item>
+    </style>
+
+</resources>
