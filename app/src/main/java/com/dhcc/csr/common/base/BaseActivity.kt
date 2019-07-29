@@ -3,9 +3,6 @@ package com.dhcc.csr.common.base
 import android.os.Bundle
 import androidx.annotation.LayoutRes
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.content.ContextCompat
-import com.dhcc.csr.R
-import com.dhcc.csr.util.StatusBarUtil
 
 /**
  * @Author: wlsh
@@ -17,8 +14,6 @@ abstract class BaseActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(getLayoutId())
-        //设置状态栏颜色
-        StatusBarUtil.setColor(this, ContextCompat.getColor(this, R.color.colorPrimaryDark))
 
         initView(savedInstanceState)
         initData()

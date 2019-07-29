@@ -10,7 +10,7 @@ import com.orhanobut.logger.PrettyFormatStrategy
 /**
  * @Author: wlsh
  * @Date: 2019/7/19 15:58
- * @Description:
+ * @Description:Application
  */
 class App : Application() {
 

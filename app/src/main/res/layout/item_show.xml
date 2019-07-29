@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/space"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardBackgroundColor="@color/color_FFFFFF"
+        app:cardCornerRadius="@dimen/space"
+        app:cardElevation="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:id="@+id/rel_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/inside_margin">
+
+            <TextView
+                android:id="@+id/txt_matter_status"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="关闭"
+                android:textColor="@color/color_FFFFFF"
+                android:textSize="@dimen/size_context" />
+
+            <LinearLayout
+                android:id="@+id/lin_left"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/txt_matter_status">
+
+                <TextView
+                    android:id="@+id/txt_order_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:maxLines="2"
+                    android:text="单号xxxxxx"
+                    android:textColor="@color/color_000000"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txt_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lin_left"
+                android:layout_marginTop="10dp"
+                android:gravity="center|left"
+                android:text="标题谁说的我可是很成熟的防护等级快点快点发动机看过的科技股份多个控件高考加分高考加分的股份大哥2"
+                android:textColor="@color/color_000000"
+                android:textSize="@dimen/size_context" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_title"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/txt_matter_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:text="12-29"
+                    android:textColor="@color/color_BBBBBB"
+                    android:textSize="@dimen/size_context" />
+
+                <TextView
+                    android:id="@+id/txt_matter_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/txt_matter_date"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="西安项目2号线项目售前支持"
+                    android:textColor="@color/color_BBBBBB"
+                    android:textSize="@dimen/size_context" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -2,10 +2,12 @@ package com.dhcc.csr.ui.login
 
 import android.os.Bundle
 import androidx.core.content.ContextCompat
+import com.blankj.utilcode.util.ActivityUtils
 import com.dhcc.csr.R
 import com.dhcc.csr.common.base.BaseMvpActivity
 import com.dhcc.csr.ui.login.contact.LoginContact
 import com.dhcc.csr.ui.login.presenter.LoginPresenterImpl
+import com.dhcc.csr.ui.main.MainActivity
 import com.dhcc.csr.util.StatusBarUtil
 import com.orhanobut.logger.Logger
 import kotlinx.android.synthetic.main.activity_login.*
@@ -47,6 +49,9 @@ class LoginActivity : BaseMvpActivity<LoginContact.LoginView, LoginContact.Login
 
     override fun loginSuccess(result: String) {
         Logger.d("登录成功:$result")
+        //跳转到主界面进行数据展示测试
+        ActivityUtils.startActivity(MainActivity::class.java)
+        finish()
     }
 
     override fun loginFailure() {

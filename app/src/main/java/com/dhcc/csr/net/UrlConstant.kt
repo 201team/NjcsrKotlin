@@ -6,5 +6,5 @@ package com.dhcc.csr.net
  * @Description: 单例存储请求主地址
  */
 object UrlConstant {
-    const val MAIN_HOST = "http://192.168.176.1:8080/Test/"
+    const val MAIN_HOST = "http://10.20.202.153:8080/Test/"
 }
